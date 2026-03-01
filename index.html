@@ -97,10 +97,7 @@
     #about { background: var(--light); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
     .about-img-wrap { position: relative; }
-    .about-img-box { border-radius: var(--radius); overflow: hidden; background: linear-gradient(135deg, var(--dark) 0%, #2d1b4e 100%); aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; }
-    .about-placeholder { text-align: center; color: rgba(255,255,255,.3); }
-    .about-placeholder .icon { font-size: 5rem; }
-    .about-placeholder p { font-size: .85rem; margin-top: 12px; }
+    .about-img-box { border-radius: var(--radius); overflow: hidden; background: linear-gradient(135deg, var(--dark) 0%, #2d1b4e 100%); aspect-ratio: 4/5; }
     .about-badge { position: absolute; bottom: -20px; right: -20px; background: var(--gold); color: var(--dark); padding: 20px 24px; border-radius: var(--radius); text-align: center; box-shadow: var(--shadow); }
     .about-badge .num { font-family: var(--serif); font-size: 2.2rem; font-weight: 600; display: block; line-height: 1; }
     .about-badge .lbl { font-size: .78rem; font-weight: 500; margin-top: 4px; }
@@ -319,10 +316,7 @@
     <div class="about-grid">
       <div class="about-img-wrap fade-in">
         <div class="about-img-box">
-          <div class="about-placeholder">
-            <div class="icon">🎹</div>
-            <p>老師照片</p>
-          </div>
+          <img src="assets/teacher-photo.jpg" alt="郭老師照片" style="width:100%;height:100%;object-fit:cover;" />
         </div>
         <div class="about-badge">
           <span class="num">12+</span>
@@ -333,16 +327,23 @@
         <p class="section-label">About the Teacher</p>
         <h2 class="section-title">從音符到舞台<br/>用熱情傳遞音樂</h2>
         <div class="divider"></div>
-        <p style="color:var(--mid);line-height:1.9;margin-bottom:16px;">
-          畢業於國立音樂院鋼琴演奏研究所，擁有超過 12 年的教學與演出經驗。曾赴維也納進修，師從多位國際知名鋼琴家，並在台灣各大婚禮、活動演出超過 300 場。
+        <p style="color:var(--mid);line-height:1.9;margin-bottom:14px;">
+          畢業於<strong style="color:var(--ink);font-weight:600;">國立臺灣師範大學音樂系演奏組碩士</strong>。就學期間代表學校參與室內樂競賽，榮獲
+          <span style="color:var(--gold);font-weight:500;">南市弦樂四重奏第一名</span>、
+          <span style="color:var(--gold);font-weight:500;">鋼琴三重奏第一名</span>、
+          <span style="color:var(--gold);font-weight:500;">全國室內樂第一名</span>、
+          <span style="color:var(--gold);font-weight:500;">木笛 A 組全國第一名</span>。
+        </p>
+        <p style="color:var(--mid);line-height:1.9;margin-bottom:14px;">
+          曾多次隨<strong style="color:var(--ink);font-weight:600;">國立臺灣師範大學管弦樂團（NTNU Symphony Orchestra）</strong>於<strong style="color:var(--ink);font-weight:600;">國家音樂廳</strong>演出。演奏橫跨古典與流行音樂，並與<strong style="color:var(--ink);font-weight:600;">蕭煌奇、詹雅雯</strong>等知名藝人合作，亦受邀於政府機關、企業活動與各類音樂會演出。
         </p>
         <p style="color:var(--mid);line-height:1.9;margin-bottom:28px;">
-          深信每位學生都有屬於自己的音樂語言。無論是初學兒童、進修成人，或是想在特殊時刻留下美好樂聲的您，都歡迎與我一起踏上這段旅程。
+          目前專注於音樂教育與演出推廣，致力透過專業教學與舞台經驗，帶領每位學生發掘屬於自己的音樂表達。深信無論是初學兒童、進修成人，或是想在特殊時刻留下美好樂聲的您，都能在音樂中找到屬於自己的語言。
         </p>
         <div class="about-tags">
-          <span class="tag">🎓 音樂院研究所</span>
-          <span class="tag">🏆 鋼琴演奏獎</span>
-          <span class="tag">🌍 維也納進修</span>
+          <span class="tag">🎓 師大音樂碩士</span>
+          <span class="tag">🏆 全國室內樂第一名</span>
+          <span class="tag">🌍 跨界演出</span>
           <span class="tag">💍 婚禮演出 300+</span>
           <span class="tag">👶 兒童音樂教育</span>
           <span class="tag">💻 線上課程</span>
@@ -363,7 +364,7 @@
 
       <div class="lesson-card fade-in">
         <div class="lesson-icon">🏠</div>
-        <h3>鋼琴家教</h3>
+        <h3>鋼琴/小提琴家教</h3>
         <p>老師到府或學生來工作室，一對一專注教學，進度快、針對性強。課程內容依學習目標彈性規劃。</p>
         <div class="lesson-meta">
           <span>60 / 90 分鐘</span>
@@ -372,22 +373,22 @@
       </div>
 
       <div class="lesson-card fade-in">
-        <div class="lesson-icon">🎷</div>
-        <h3>成人鋼琴課</h3>
+        <div class="lesson-icon">🧑🏻</div>
+        <h3>成人音樂課</h3>
         <p>專為成人設計，從零開始或補習重練皆可。課程節奏舒適，著重樂趣與表達，讓音樂融入您的生活。</p>
         <div class="lesson-meta">
-          <span>週一至週六</span>
-          <span>工作室授課</span>
+          <span>60 / 90 分鐘</span>
+          <span>到府 / 來室</span>
         </div>
       </div>
 
       <div class="lesson-card fade-in">
         <div class="lesson-icon">🧒</div>
         <h3>兒童音樂課</h3>
-        <p>4 歲起可報名，融合律動、繪本、遊戲等教學元素，培養孩子的音感、節奏感與對音樂的熱愛。</p>
+        <p>5 歲起可報名，融合律動、繪本、遊戲等教學元素，培養孩子的音感、節奏感與對音樂的熱愛。</p>
         <div class="lesson-meta">
-          <span>4 歲以上</span>
-          <span>45 分鐘</span>
+          <span>5 歲以上</span>
+          <span>60 分鐘</span>
           <span class="badge-gold">適合初學</span>
         </div>
       </div>
@@ -395,7 +396,7 @@
       <div class="lesson-card fade-in">
         <div class="lesson-icon">💻</div>
         <h3>線上課程</h3>
-        <p>透過視訊平台進行一對一授課，不受地域限制。備有清晰攝影設備，確保每個指法細節都清楚可見。</p>
+        <p>透過視訊平台進行一對一授課，不受地域限制。老師搭配多角度鏡頭呈現指法與踏板細節，線上教學效果與實體課程一樣扎實。</p>
         <div class="lesson-meta">
           <span>Zoom / Meet</span>
           <span>全台 / 海外</span>
@@ -420,7 +421,7 @@
         <div class="perf-card-bg w"></div>
         <div class="perf-deco">💍</div>
         <div class="perf-content">
-          <h3>婚禮鋼琴演奏</h3>
+          <h3>婚禮小提琴演奏</h3>
           <p>典雅浪漫的現場演奏，為您最重要的一天留下無與倫比的音樂回憶。可依主題客製選曲。</p>
           <a href="#contact">了解方案 →</a>
         </div>
@@ -671,12 +672,12 @@
 
       <div class="faq-item">
         <button class="faq-q">上課地點在哪裡？<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">工作室位於台北市大安區，交通便利。亦提供到府教學（收取交通費用）及視訊線上課程，可依您的需求選擇最合適的方式。</div></div>
+        <div class="faq-a"><div class="faq-a-inner">工作室位於捷運海山站，交通便利。亦提供到府教學及視訊線上課程，可依您的需求選擇最合適的方式。</div></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q">課程費用如何計算？<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">費用依課程類型、時長及地點有所不同。建議直接透過聯絡表單告知您的需求，老師將提供詳細報價。一般課程從每堂 NT$800 起，歡迎詢問月費方案。</div></div>
+        <div class="faq-a"><div class="faq-a-inner">費用依課程類型、時長及地點有所不同。建議直接透過聯絡表單告知您的需求，老師將提供詳細報價。</div></div>
       </div>
 
       <div class="faq-item">
@@ -687,11 +688,6 @@
       <div class="faq-item">
         <button class="faq-q">婚禮演出如何預約？需要多早確認？<span class="faq-icon">+</span></button>
         <div class="faq-a"><div class="faq-a-inner">建議婚禮日期確定後盡早聯繫，旺季（尤其是秋冬婚禮季）檔期通常提前 3–6 個月即滿。請填寫聯絡表單並附上日期、地點及需求，老師會盡快回覆確認。</div></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">線上課程的音質和效果好嗎？<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">老師配備有專業收音設備與高清攝影機，可清楚呈現手指細節與踏板用法。多位線上學員反映效果媲美實體課，且可錄影課後複習，靈活方便。</div></div>
       </div>
 
       <div class="faq-item">
@@ -713,24 +709,17 @@
     <div class="contact-grid">
       <div class="contact-info fade-in">
         <div class="contact-info-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <div class="contact-label">電話</div>
-            <div class="contact-value">0912-345-678</div>
-          </div>
-        </div>
-        <div class="contact-info-item">
           <div class="contact-icon">✉️</div>
           <div>
             <div class="contact-label">Email</div>
-            <div class="contact-value">teacher@musicstudio.tw</div>
+            <div class="contact-value">daylilymusic@gmail.com</div>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-icon">🕐</div>
           <div>
             <div class="contact-label">上課時間</div>
-            <div class="contact-value">週二至週六 10:00 – 21:00</div>
+            <div class="contact-value">週ㄧ~週六 10:00~21:00</div>
           </div>
         </div>
         <div class="contact-info-item">
